@@ -11,8 +11,9 @@ use Illuminate\Support\Collection;
 
 class WebserviceOperatorService
 {
-    private string $link = "x"; //для примера убрано
-    private int $operatorId = 0; //для примера убрано
+    //Некоторые данные изменены или убраны для премера
+    private string $link = "x"; //для примера изменено
+    private int $operatorId = 0; //для примера изменено
     private WebserviceOperatorChatRepository $repository;
 
     public function __construct()
@@ -37,9 +38,9 @@ class WebserviceOperatorService
             'text' => $text,
             'employee' => [
                 'employeeId' => $this->operatorId,
-                'firstName' => 'NONE', //для примера убрано
-                'lastName' => 'NONE', //для примера убрано
-                'avatarUrl' => null //для примера убрано
+                'firstName' => 'NONE', //для примера изменено
+                'lastName' => 'NONE', //для примера изменено
+                'avatarUrl' => null //для примера изменено
             ]
         ];
         $client->post('', ['json' => $data]);

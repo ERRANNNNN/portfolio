@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\DB;
 
 class WebserviceOperatorChatRepository
 {
+
+    //Некоторые данные изменены для примера
     /**
      * Получение чатов
      * @param string $prefix
